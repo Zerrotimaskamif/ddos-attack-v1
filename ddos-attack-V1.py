@@ -8,7 +8,7 @@ import threading
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--ip", required=True, type=str, help="Host ip")
 ap.add_argument("-p", "--port", required=True, type=int, help="Port")
-ap.add_argument("-c", "--udp", type=str, default="y", help="UDP(y/n)")
+ap.add_argument("-c", "--choice", type=str, default="y", help="UDP(y/n)")
 ap.add_argument("-t", "--times", type=int, default=50000, help="Packets per one connection")
 ap.add_argument("-th", "--threads", type=int, default=5, help="Threads")
 args = vars(ap.parse_args())
